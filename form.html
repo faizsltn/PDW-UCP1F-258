@@ -17,3 +17,76 @@
       <li><a href="./gallery.html">Multimedia</a></li>
     </ul>
   </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <h1>📋 Daftar Anggota Baru</h1>
+    <p>Isi form di bawah ini untuk bergabung dengan Tech Community</p>
+  </div>
+
+  <!-- FORM SECTION -->
+  <div class="section">
+    <div class="form-wrap">
+
+      <form id="memberForm">
+
+        <!-- Nama -->
+        <div class="form-group">
+          <label for="nama">👤 Nama Lengkap</label>
+          <input
+            type="text"
+            id="nama"
+            placeholder="Masukkan nama lengkap..."
+            required
+          />
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">📧 Alamat Email Kampus</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="contoh@mail.umy.ac.id"
+            required
+          />
+        </div>
+
+        <!-- Bidang Minat -->
+        <div class="form-group">
+          <label for="bidang">💻 Bidang Peminatan</label>
+          <select id="bidang" required>
+            <option value="">-- Pilih Bidang --</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Mobile Development">Mobile Development</option>
+            <option value="Data Science">Data Science</option>
+            <option value="UI/UX Design">UI/UX Design</option>
+            <option value="Cybersecurity">Cybersecurity</option>
+            <option value="Artificial Intelligence">Artificial Intelligence</option>
+            <option value="Software Engginering">Software Engginering</option>
+          </select>
+        </div>
+
+        <!-- Tombol Submit -->
+        <button type="submit" class="btn btn-primary" style="width:100%; margin-bottom:10px;">
+          ✅ Daftar
+        </button>
+
+        <!-- Tombol Kembali -->
+        <a href="./index.html" class="btn btn-outline" style="width:100%; text-align:center; display:block;">
+          ← Kembali ke Halaman Utama
+        </a>
+
+      </form>
+
+      <!-- Hasil Input ditampilkan di sini -->
+      <div id="resultBox" class="result-box"></div>
+
+    </div>
+  </div>
+
+  <footer>© 2026 Tech Community — Semua hak dilindungi</footer>
+
+  <script src="./javascript/script.js"></script>
+</body>
+</html>
