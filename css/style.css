@@ -64,3 +64,43 @@ nav, section, div, footer { position: relative; z-index: 1; }
     color: #00eaff;
     border: 1px solid #00d4ff77;
   }
+  
+  /* ===== HERO ===== */
+  .hero {
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .hero-label {
+    font-size: 0.9rem;
+    letter-spacing: 6px;
+    font-weight: 700;
+    color: #00eaff;
+    margin-bottom: 16px;
+    text-shadow: 0 0 16px #00d4ff, 0 0 30px #00d4ff88;
+  }
+  
+  .hero-title {
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    font-weight: 900;
+    line-height: 1.1;
+    color: #ffffff;
+    text-shadow: 0 0 40px rgba(0,212,255,0.5), 0 3px 6px rgba(0,0,0,1), 0 8px 24px rgba(0,0,0,0.9);
+    margin-bottom: 22px;
+  }
+  
+  .hero-desc {
+    font-size: 1.15rem;
+    color: #ffffff;
+    font-weight: 500;
+    max-width: 560px;
+    margin: 0 auto 38px;
+    line-height: 1.75;
+    text-shadow: 0 1px 8px rgba(0,0,0,1), 0 2px 16px rgba(0,0,0,0.9);
+  }
+  
+  .hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
