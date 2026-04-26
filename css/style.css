@@ -1,0 +1,26 @@
+/* ===== RESET & GLOBAL ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* FIX GESER KANAN-KIRI */
+html, body { overflow-x: hidden; width: 100%; }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  min-height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=90');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 5, 20, 0.55);
+  z-index: 0;
+}
+
+nav, section, div, footer { position: relative; z-index: 1; }
