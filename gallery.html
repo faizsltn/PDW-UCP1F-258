@@ -17,3 +17,76 @@
       <li><a href="./gallery.html" class="active">Multimedia</a></li>
     </ul>
   </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <h1>🎬 Multimedia Gallery</h1>
+    <p>Koleksi gambar, video, dan audio seputar dunia teknologi</p>
+  </div>
+
+  <div class="section">
+    <div class="media-grid">
+
+      <!-- GAMBAR INTERAKTIF -->
+      <div class="media-card">
+        <img
+          id="mainImg"
+          src="https://static.vecteezy.com/system/resources/thumbnails/007/019/122/small_2x/futuristic-technology-concept-mixed-media-innovations-data-systems-connecting-ai-artificial-intelligence-robotic-hand-on-blue-circuit-board-background-innovative-technologies-and-communication-free-photo.jpg"
+          alt="Tech Image"
+        />
+        <div class="media-info">
+          <h3>🖼️ Galeri Teknologi</h3>
+          <div class="img-controls">
+            <button class="btn btn-outline" onclick="prevImage()">◀ Prev</button>
+            <button class="btn btn-outline" onclick="nextImage()">Next ▶</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIDEO YOUTUBE -->
+      <div class="media-card">
+        <iframe
+          src="https://www.youtube.com/embed/7FJUz-54AX0"
+          title="Tech Video"
+          allowfullscreen
+        ></iframe>
+        <div class="media-info">
+          <h3>🎥 Video Teknologi</h3>
+          <p style="color:#7ab0c8; font-size:0.85rem;">
+            Video tentang perkembangan teknologi modern, diambil dari NASA.
+          </p>
+        </div>
+      </div>
+
+      <!-- AUDIO PLAYER -->
+      <div class="media-card">
+        <div style="padding: 20px 16px 0;">
+          <div style="font-size:3rem; text-align:center; margin-bottom:12px;">🎵</div>
+        </div>
+        <div class="media-info">
+          <h3>🔊 Audio Player</h3>
+        
+          <audio id="myAudio" controls>
+            <source src="./audio/lagu.mp3" type="audio/mpeg"/>
+            
+          </audio>
+          <div class="audio-btns">
+            <button class="btn btn-primary" onclick="playAudio()">▶ Play</button>
+            <button class="btn btn-danger"  onclick="stopAudio()">⏹ Stop</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Tombol kembali -->
+    <div style="text-align:center; margin-top:36px;">
+      <a href="./index.html" class="btn btn-outline">← Kembali ke Halaman Utama</a>
+    </div>
+  </div>
+
+  <footer>© 2026 Tech Community — Semua hak dilindungi</footer>
+
+  <script src="./javascript/script.js"></script>
+</body>
+</html>
