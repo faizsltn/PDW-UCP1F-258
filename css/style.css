@@ -156,3 +156,26 @@ nav, section, div, footer { position: relative; z-index: 1; }
     font-weight: 600;
     text-shadow: 0 1px 5px rgba(0,0,0,0.9);
   }
+  
+  /* ===== SECTION ===== */
+  .section { padding: 60px 40px; max-width: 1100px; margin: 0 auto; }
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 8px;
+    text-align: center;
+    text-shadow: 0 2px 12px rgba(0,0,0,1), 0 0 30px rgba(0,0,0,0.8);
+  }
+  
+  .section-title span { color: #00eaff; text-shadow: 0 0 14px #00d4ff88; }
+  
+  .section-sub {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 36px;
+    font-size: 0.97rem;
+    text-shadow: 0 1px 8px rgba(0,0,0,1);
+  }
