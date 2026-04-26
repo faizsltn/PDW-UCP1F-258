@@ -51,3 +51,33 @@ function getMembers() {
       renderTable();
     }
   }
+  
+  // ===== FORM SUBMIT (form.html) =====
+  function initForm() {
+    const form = document.getElementById('memberForm');
+    if (!form) return;
+  
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+  
+      const nama   = document.getElementById('nama').value.trim();
+      const email  = document.getElementById('email').value.trim();
+      const bidang = document.getElementById('bidang').value;
+  
+      const members = getMembers();
+      members.push({ nama, email, bidang });
+      saveMembers(members);
+  
+      const box = document.getElementById('resultBox');
+      box.style.display = 'block';
+      box.innerHTML = `
+        ✅ <strong>Data berhasil disimpan!</strong><br>
+        👤 Nama   : <strong>${nama}</strong><br>
+        📧 Email  : <strong>${email}</strong><br>
+        💻 Bidang : <strong>${bidang}</strong><br>
+        📦 Total anggota: <strong>${members.length}</strong><br><br>
+        <a href="./index.html" style="color:#00eaff; font-weight:700;">→ Lihat di Halaman Utama</a>`;
+  
+      form.reset();
+    });
+  }
