@@ -110,3 +110,9 @@ function getMembers() {
     a.pause();
     a.currentTime = 0;
   }
+  
+  // ===== INIT =====
+  document.addEventListener('DOMContentLoaded', function() {
+    renderTable();
+    initForm();
+  });
