@@ -81,3 +81,23 @@ function getMembers() {
       form.reset();
     });
   }
+  
+  // ===== GALLERY =====
+  const images = [
+    'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80',
+    'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80',
+    'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=80',
+    'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80',
+    "./images/faizsltn.jpeg",
+  ];
+  let currentImg = 0;
+  
+  function nextImage() {
+    currentImg = (currentImg + 1) % images.length;
+    document.getElementById('mainImg').src = images[currentImg];
+  }
+  
+  function prevImage() {
+    currentImg = (currentImg - 1 + images.length) % images.length;
+    document.getElementById('mainImg').src = images[currentImg];
+  }
