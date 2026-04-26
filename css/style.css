@@ -104,3 +104,25 @@ nav, section, div, footer { position: relative; z-index: 1; }
   }
   
   .hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  
+  /* ===== TOMBOL ===== */
+  .btn {
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s;
+    display: inline-block;
+  }
+  
+  .btn-primary { background: #00d4ff; color: #001020; }
+  .btn-primary:hover { background: #00f0ff; transform: translateY(-2px); box-shadow: 0 4px 20px #00d4ff66; }
+  
+  .btn-outline { border: 2px solid #00d4ff; color: #ffffff; background: rgba(0,212,255,0.12); }
+  .btn-outline:hover { background: #00d4ff33; color: #00eaff; transform: translateY(-2px); }
+  
+  .btn-danger { background: #ff4455; color: #fff; }
+  .btn-danger:hover { background: #ff2233; }
