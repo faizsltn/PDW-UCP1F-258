@@ -24,3 +24,43 @@ body::before {
 }
 
 nav, section, div, footer { position: relative; z-index: 1; }
+
+/* ===== NAVBAR ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    background: rgba(0, 10, 35, 0.82);
+    border-bottom: 2px solid #00d4ff55;
+    backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .nav-brand {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #00eaff;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px #00d4ff;
+  }
+  
+  .nav-links { list-style: none; display: flex; gap: 24px; }
+  
+  .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 6px;
+    transition: all 0.3s;
+  }
+  
+  .nav-links a:hover, .nav-links a.active {
+    background: #00d4ff33;
+    color: #00eaff;
+    border: 1px solid #00d4ff77;
+  }
