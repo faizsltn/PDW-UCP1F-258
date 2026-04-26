@@ -101,3 +101,12 @@ function getMembers() {
     currentImg = (currentImg - 1 + images.length) % images.length;
     document.getElementById('mainImg').src = images[currentImg];
   }
+  
+  // ===== AUDIO =====
+  function playAudio() { document.getElementById('myAudio').play(); }
+  
+  function stopAudio() {
+    const a = document.getElementById('myAudio');
+    a.pause();
+    a.currentTime = 0;
+  }
