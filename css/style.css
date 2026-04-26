@@ -230,3 +230,53 @@ nav, section, div, footer { position: relative; z-index: 1; }
   }
   
   tr:hover td { background: rgba(0, 212, 255, 0.09); }
+  
+  /* ===== FORM ===== */
+  .form-wrap {
+    background: rgba(0, 8, 30, 0.88);
+    border: 1px solid #00d4ff44;
+    border-radius: 14px;
+    padding: 36px;
+    max-width: 520px;
+    margin: 0 auto;
+    backdrop-filter: blur(14px);
+  }
+  
+  .form-group { margin-bottom: 20px; }
+  
+  label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 8px;
+    text-shadow: 0 1px 5px rgba(0,0,0,0.9);
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 11px 14px;
+    background: rgba(0, 20, 55, 0.92);
+    border: 1px solid #00d4ff55;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  input:focus, select:focus { border-color: #00eaff; box-shadow: 0 0 10px #00d4ff55; }
+  select option { background: #001428; color: #fff; }
+  
+  .result-box {
+    display: none;
+    background: rgba(0, 212, 255, 0.15);
+    border: 1px solid #00d4ff66;
+    border-radius: 10px;
+    padding: 18px;
+    margin-top: 24px;
+    font-size: 0.93rem;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 1.9;
+  }
