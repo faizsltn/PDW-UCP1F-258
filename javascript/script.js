@@ -40,3 +40,14 @@ function getMembers() {
         </tr>`;
     });
   }
+  
+  // ===== HAPUS ANGGOTA =====
+  function hapusMember(index) {
+    const members = getMembers();
+    const nama = members[index].nama;
+    if (confirm('Hapus anggota "' + nama + '"?')) {
+      members.splice(index, 1);
+      saveMembers(members);
+      renderTable();
+    }
+  }
